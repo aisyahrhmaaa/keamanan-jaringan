@@ -1,0 +1,39 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "keamanan jaringan campus cafe",
+    "owner": "lathisya",
+    "description": "sistem keamanan jaringan campus cafe",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "aisyah"
+      },
+      {
+        "name": "sisil"
+      },
+      {
+        "name": "alvita"
+      },
+      {
+        "name": "lathisya"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "threat model jaringan campus cafe",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "pak wayan",
+    "threatTop": 0
+  }
+}
