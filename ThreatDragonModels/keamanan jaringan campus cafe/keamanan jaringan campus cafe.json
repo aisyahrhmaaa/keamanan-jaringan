@@ -831,7 +831,27 @@
             "target": {
               "cell": "32a00aaa-06ce-48e7-9842-c660d695fa4a",
               "port": "3557b847-073b-4d7c-96e8-657af6720dba"
-            }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 570
+              },
+              {
+                "x": 390,
+                "y": 600
+              }
+            ]
           },
           {
             "shape": "flow",
