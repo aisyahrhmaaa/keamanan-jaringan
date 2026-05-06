@@ -297,18 +297,18 @@
                   "id": "a145264b-b202-47fb-a978-8188218edbde",
                   "title": "Broken Authentication & Session Hijacking",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Critical",
                   "type": "Spoofing",
                   "description": "User authentication gagal (credential stuffing, session hijack via cookie/JWT)",
                   "mitigation": "MFA\nbcrypt password hashing\nJWT short-lived + refresh token\nSecure cookies\nAccount lockout",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
-                  "score": ""
+                  "score": "25"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -439,18 +439,18 @@
                   "id": "9898a454-69d1-4f09-9514-c6c3086e105a",
                   "title": "Email Phishing (Notification Spoofing)",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Email palsu dari domain sistem",
                   "mitigation": "SPF / DKIM / DMARC\nEmail allowlist\nBlock redirect URL",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
-                  "score": ""
+                  "score": "12"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -581,19 +581,19 @@
                   "id": "5d22a759-65b8-463e-acd2-f4b404074852",
                   "title": "Stored XSS (Comment System)",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Tampering",
                   "description": "Komentar user disimpan lalu dirender → XSS",
                   "mitigation": "Output encoding\nCSP\nSanitization (DOMPurify)\nBlock <script>",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
-                  "score": ""
+                  "score": "20"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -729,20 +729,20 @@
                   "id": "d230d141-eda6-4ed3-a585-a31332d582e6",
                   "title": "IDOR (User Profile API)",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "/api/users/{id} bisa di-enumerate",
                   "mitigation": "UUID\nAuth check\nRate limiting",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
-                  "score": ""
+                  "score": "12"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }
@@ -875,20 +875,20 @@
                   "id": "8f673414-ad18-423b-9b6c-33e6a87358b4",
                   "title": "Security Misconfiguration",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Error message terlalu detail, admin path terbuka",
                   "mitigation": "Generic error message\nHide stack trace\nSecurity headers\nProtect admin route",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
-                  "score": ""
+                  "score": "9"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }
@@ -1015,19 +1015,19 @@
                   "id": "a91104a5-2864-42ab-b9c7-a7a70624cd99",
                   "title": "SQL Injection (Registration Form)",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Tampering",
                   "description": "Input field tidak divalidasi → SQL Injection",
                   "mitigation": "Prepared statement\nORM\nInput validation\nLeast privilege DB",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
-                  "score": ""
+                  "score": "20"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -1157,14 +1157,14 @@
                   "id": "009a1ba6-3e19-4457-9145-11567a0956ab",
                   "title": "Broken Access Control (Event Modification)",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Elevation of privilege",
                   "description": "ID event bisa dimanipulasi (IDOR)",
                   "mitigation": "RBAC\nOwnership check\nAudit log",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
-                  "score": ""
+                  "score": "16"
                 }
               ],
               "threatFrequency": {
@@ -1173,7 +1173,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
